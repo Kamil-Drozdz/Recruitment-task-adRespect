@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script defer type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: {} }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>GiardDesign</title>
+</head>
+
+<body class="max-w-full ">
+    <div class=" bg-white flex-col justify-start items-center flex ">
+        <ul class="w-full px-[5%] py-6 bg-white justify-between items-center flex">
+            <img class="cursor-pointer" src="/assets/giarddesign.svg" />
+            <div class="md:hidden cursor-pointer hamburger">
+                <div class="w-6 h-1 bg-gray-900"></div>
+                <div class="w-6 h-1 mt-1 bg-gray-900"></div>
+                <div class="w-6 h-1 mt-1 bg-gray-900"></div>
+            </div>
+            <div
+                class="navbar justify-start absolute right-2 bg-gray-400 rounded-lg px-4 py-2 md:px-0 md:py-0 md:bg-transparent top-12 md:static cursor-pointer md:flex hidden items-center gap-12 text-center text-neutral-900 text-sm font-normal leading-tigh">
+                <li class="group relative inline-block">
+                    <div class="hover:bg-gray-100 px-2 py-1 rounded-lg transition duration-300">Oferta</div>
+                    <ul
+                        class="hidden group-hover:block absolute mt-1 min-w-[160px] z-[1] bg-white rounded-lg border-2 top-0 md:top-5 md:right-0 right-20 border-gray-400">
+                        <li class="hover:bg-gray-200 rounded-lg text-black px-2 py-1 transition duration-300">Podoferta
+                            1</li>
+                        <li class="hover:bg-gray-200 rounded-lg text-black px-2 py-1 transition duration-300">Podoferta
+                            2</li>
+                    </ul>
+                </li>
+
+                <li class="whitespace-nowrap px-2 py-1 hover:bg-gray-100 rounded-lg transition duration-300">O firmie
+                </li>
+                <li class="px-2 py-1 hover:bg-gray-100 rounded-lg transition duration-300">Realizacje</li>
+                <li class="px-2 py-1 hover:bg-gray-100 rounded-lg transition duration-300">Kontakt</li>
+                <li class=" w-full relative">
+                    <img class="w-5 h-5 mx-auto left-[2.25px] top-[2.25px] search-icon" src="/assets/search.svg" />
+                    <input type="text" class="absolute search-input border-[1px] rounded-lg border-gray-200"
+                        style="display: none; left: 0px; top: 0px;" placeholder="Wpisz tutaj...">
+
+                </li>
+            </div>
+        </ul>
+        <div class="flex w-full h-fit md:flex-row flex-col ">
+            <div class=" bg-orange-200 justify-end items-center w-full px-2 md:px-12 md:w-1/2 flex">
+                <div class=" flex-col justify-start items-start gap-16 flex md:py-0 py-4">
+                    <div class="self-stretch  md:h-80 flex-col justify-start items-start gap-11 flex">
+                        <div class="self-stretch text-neutral-900 text-3xl  md:text-6xl font-medium md:leading-[70px]">
+                            Nowoczesna<br />
+                            aranżacja<br />Twojego ogrodu </div>
+                        <div class=" text-neutral-900 text-base font-normal leading-normal">Marka GiardDesign to
+                            wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług
+                            z
+                            indywidualnym podejściem do każdego projektu.</div>
+                    </div>
+                    <div
+                        class="justify-start items-start gap-9 flex text-center text-stone-100 text-base font-normal leading-normal">
+                        <div
+                            class="px-6 md:pt-3 md:pb-3.5 bg-green-900 rounded-full justify-start items-center gap-2.5 flex">
+                            <div>Skontaktuj się
+                                z
+                                nami</div>
+                        </div>
+                        <div
+                            class="px-5 md:pt-3 md:pb-3.5 rounded-full border border-green-900 justify-start items-center gap-2 flex">
+                            <div class="text-green-900">Zobacz nasze
+                                realizacje</div> <img src="/assets/arrowDown.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="w-full md:w-1/2 object-contain" src="/assets/Photo.png" />
+        </div>
+        <div class=" py-28 pb-40 w-full  bg-stone-100 flex-col justify-start items-center gap-24 flex">
+            <div class="md:w-1/2 w-full mx-auto flex-col justify-start items-start gap-4 flex flex-wrap">
+                <div class="text-green-900 text-xs font-normal ">Oferta</div>
+                <div class="md:h-40 h-full flex-col justify-start items-start gap-8 flex">
+                    <span class="text-neutral-900 text-3xl md:text-5xl font-medium leading-10 w-full">Działamy
+                        kompleksowo
+                    </span>
+                    <div class="text-neutral-900 text-base font-normal leading-normal w-full whitespace-prewrap">
+                        Oferujemy
+                        kompletną
+                        obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
+                        rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym
+                        etapie posłużymy radą i wieloletnim doświadczeniem. </div>
+                </div>
+            </div>
+            <div class="md:h-96 px-4 md:px-20 bg-stone-100 justify-center items-start gap-16 flex flex-col md:flex-row">
+                <div class="h-full px-10 py-12 bg-white rounded-3xl flex-col justify-between items-start gap-8 flex">
+                    <div class="self-stretch h-44 flex-col justify-start items-start gap-8 flex">
+                        <div class="w-11 h-11 p-0.5 justify-center items-center flex">
+                            <img src="/assets/pen.png" />
+                        </div>
+                        <div class="self-stretch h-28 flex-col justify-start items-center gap-3 flex">
+                            <div class="self-stretch text-neutral-900 text-3xl font-medium leading-loose">Projekty</div>
+                            <div class="self-stretch text-neutral-900 text-sm font-normal leading-tight">Zaprojektujemy
+                                Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+                            </div>
+                        </div>
+                    </div>
+                    <a href="projekty.html"
+                        class="pb-1 border-b border-green-900 p-2 cursor-pointer hover:bg-gray-200 transition:colors duration-300 ease-in-out  justify-start items-center gap-2.5 flex">
+                        <div class="text-center text-green-900 text-base font-normal leading-normal">Dowiedz się więcej
+                        </div><img src="/assets/arrowRight.svg" />
+                    </a>
+                </div>
+                <div class="h-full px-10 py-12 bg-white rounded-3xl flex-col justify-between items-start gap-8 flex">
+                    <div class="self-stretch h-44 flex-col justify-start items-start gap-8 flex">
+                        <div class="w-12 h-11 py-2 justify-center items-center flex">
+                            <img src="/assets/eye.png" />
+                        </div>
+                        <div class="self-stretch h-28 flex-col justify-start items-center gap-3 flex">
+                            <div class="self-stretch text-neutral-900 text-3xl font-medium leading-loose">Wizualizacje
+                            </div>
+                            <div class="self-stretch text-neutral-900 text-sm font-normal leading-tight">Przedstawimy Ci
+                                projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</div>
+                        </div>
+                    </div>
+                    <a href="wizualizacje.html"
+                        class="pb-1 border-b border-green-900 cursor-pointer p-2 hover:bg-gray-200 transition:colors duration-300 ease-in-out  justify-start items-center gap-2.5 flex">
+                        <div class="text-center text-green-900 text-base font-normal leading-normal">Dowiedz się więcej
+                        </div><img src="/assets/arrowRight.svg" />
+                    </a>
+                </div>
+                <div class="h-full  px-10 py-12 bg-white rounded-3xl flex-col justify-between items-start gap-11 flex">
+                    <div class="self-stretch h-44 flex-col justify-start items-start gap-8 flex">
+                        <div class="w-11 h-11 justify-center items-center flex">
+                            <img src="/assets/shiny.png" />
+                        </div>
+                        <div class="self-stretch h-28 flex-col justify-start items-center gap-3 flex">
+                            <div class="self-stretch text-neutral-900 text-3xl font-medium leading-loose">Realizacje
+                            </div>
+                            <div class="self-stretch text-neutral-900 text-sm font-normal leading-tight">Zrealizujemy
+                                Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</div>
+                        </div>
+                    </div>
+                    <a href="realizacje.html"
+                        class="pb-1 border-b border-green-900 cursor-pointer p-2 hover:bg-gray-200 transition:colors duration-300 ease-in-out justify-start items-center gap-2.5 flex">
+                        <div class="text-center text-green-900 text-base font-normal leading-normal">Zobacz nasze
+                            realizacje</div><img src="/assets/arrowRight.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full md:flex-row flex-col">
+            <img class="w-full md:w-1/2 object-contain" src="/assets/house.png" />
+            <div class=" bg-green-900 md:p-24 w-full md:w-1/2 p-6 md:gap-16 flex">
+                <div class=" md:pl-24  flex-col justify-start items-start gap-16 flex">
+                    <div class="self-stretch md:h-80 h-full flex-col justify-start items-start gap-4 flex">
+                        <div class="text-stone-100 text-xs font-normal leading-none">O firmie</div>
+                        <div class="self-stretch md:h-72 flex-col justify-start items-start gap-10 flex">
+                            <div><span class="text-stone-100 text-5xl font-medium leading-10">Tworzymy <br /> z
+                                    pasją</span>
+                            </div>
+                            <div class="self-stretch text-stone-100 text-base font-normal leading-normal">Każdy projekt
+                                to
+                                nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci,
+                                których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+                                specjalizacja
+                                to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
+                                prostota.
+                                Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</div>
+                        </div>
+                    </div>
+                    <div
+                        class="px-5 pt-3 pb-3.5 rounded-full border border-stone-100 justify-start items-center gap-2 flex">
+                        <div class="text-center text-stone-100 text-base font-normal leading-normal">Poznaj nas bliżej
+                        </div> <img class="!fill-white" src="/assets/arrowRightWhite.svg" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-full pt-28 pb-11 bg-orange-200 flex-col justify-start items-start gap-24 flex">
+            <div class="md:pl-40 pl-6 flex-col justify-start items-start gap-4 flex">
+                <div class="text-green-900 text-xs font-normal leading-none">Realizacje</div>
+                <div><span class="text-neutral-900 text-5xl font-medium leading-10">Nasze projekty </span></div>
+            </div>
+            <div class="masonry-container w-1/2 xl:w-3/4 2xl:w-[85%] mx-auto">
+                <a href="/assets/projects/Photo (2).png" class="max-w-[600px] masonry-item bg-orange-300 p-4 "
+                    data-lightbox="gallery">
+                    <img src="/assets/projects/Photo (2).png" alt="Zdjęcie 1"></d>
+                    <a href="/assets/projects/Photo (3).png"
+                        class="max-w-[600px] masonry-item bg-orange-300 p-4 h-[200px]" data-lightbox="gallery">
+                        <img src="/assets/projects/Photo (3).png" alt="Zdjęcie 2"></a>
+                    <a href="/assets/projects/Photo (4).png" class="max-w-[600px] masonry-item bg-orange-300  p-4"
+                        data-lightbox="gallery">
+                        <img src="/assets/projects/Photo (4).png" alt="Zdjęcie 3"></a>
+                    <a href="/assets/projects/Photo (5).png" class="max-w-[600px] masonry-item bg-orange-300  p-4"
+                        data-lightbox="gallery">
+                        <img src="/assets/projects/Photo (5).png" alt="Zdjęcie 4"></a>
+                    <a href="/assets/projects/Photo (6).png" class="max-w-[600px] masonry-item bg-orange-300  p-4"
+                        data-lightbox="gallery">
+                        <img src="/assets/projects/Photo (6).png" alt="Zdjęcie 5">
+                        <a href="/assets/projects/Photo (7).png" class="max-w-[600px] masonry-item bg-orange-300  p-4"
+                            data-lightbox="gallery">
+                            <img src="/assets/projects/Photo (7).png" alt="Zdjęcie 6"></a>
+            </div>
+            <div class="mx-auto">
+                <button
+                    class=" flex items-center expand-button text-center px-5 pt-3 pb-3.5  rounded-full border border-neutral-900 text-neutral-900 text-base font-normal leading-normal">Rozwiń
+                    <img class="grayscale ml-2" src="/assets/arrowDown.svg" />
+                </button>
+            </div>
+        </div>
+    </div>
+    <div
+        class=" md:mx-[10%] px-8 md:px-[15%] my-14 py-28 bg-green-900 justify-start items-center gap-16 flex md:flex-row flex-col">
+        <div><span class="text-stone-100 text-4xl font-normal leading-10">Zostańmy w kontakcie! Znajdziesz nas na
+                Instagramie </div>
+        <div class="w-48 flex-col justify-start items-start gap-6 flex">
+            <div class="w-full text-stone-100 whitespace-nowrap ">Śledź nasze <br /> najnowsze realizacje!</div>
+            <div class="px-6 pt-2.5 pb-3 bg-stone-100 rounded-full justify-start items-center gap-2.5 flex">
+                <div class="text-center text-green-900 text-base font-normal leading-normal">Instagram
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class=" md:px-64 py-20 bg-neutral-900 flex-col justify-start w-full items-center gap-28 flex">
+        <div class=" flex-col justify-start w-full items-start gap-16 flex">
+            <div
+                class="justify-between items-center w-full flex flex-col md:flex-row space-y-4 md:space-y-0 px-2 md:px-0">
+                <img src="/assets/giarddesignWhite.svg" />
+                <div class="justify-start items-center gap-6 flex">
+                    <div class="text-stone-100 text-base font-normal leading-normal">Daj znać, co możemy dla Ciebie
+                        zrobić!</div>
+                    <div
+                        class="px-6 md:pt-3 md:pb-3.5 bg-green-900 rounded-full justify-start items-center gap-2.5 flex">
+                        <div class="text-center text-stone-100 text-base font-normal leading-normal">Skontaktuj się
+                            z nami</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-t-[#F5F0EC] border-t-[1px] w-full" />
+            <div class=" justify-between w-full space-y-4 md:space-y-0 items-start flex flex-wrap px-2 md:px-0">
+                <div
+                    class="md:justify-start justify-between w-full md:w-fit items-center md:gap-12 space-x-4 md:space-x-0  flex flex-wrap text-center text-stone-100 text-sm font-normal leading-tight">
+                    <div>Kontakt</div>
+                    <div>Instagram</div>
+                    <div>Facebook</div>
+                    <div>LinkedIn</div>
+                </div>
+                <div
+                    class="md:justify-start justify-between w-full md:w-fit items-start gap-12 flex text-stone-100 text-sm font-normal leading-tight">
+                    <div class=" whitespace-nowrap">000-000-000
+                    </div>
+                    <div>giarddesign@kontakt.pl</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full justify-between items-center flex flex-col md:flex-row">
+            <div class="text-stone-100 text-base font-normal leading-normal">Prawa zastrzeżone © 2022</div>
+            <div class="justify-start items-center gap-4 flex">
+                <div class="text-stone-100 text-base font-normal leading-normal">made by</div>
+                <div class="w-28 h-6 relative">
+                    <div class="w-28 h-6 left-0 top-0 absolute"><img src="/assets/logo-full-light.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
